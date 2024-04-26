@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntrA cart-summery</title>
+
+    <style>
+        .add{
+          
+          
+          background-color: blue;
+        
+          margin-right: 30px;
+          border-radius: 20px;
+        }
+        #click{
+          
+          margin-right: 10px;}
+          
+          #click-me{
+          background-color: lightgreen;
+          padding: 5px 5px;
+          border: none;
+          border-radius: 20px;
+        }
+        
+        
+            </style>
+
+
+</head>
+<body>
+
+
+<button class="add"; onclick="
+    worth=worth+1;
+    document.querySelector('#cart').innerText='your bag has ' + worth + 'itemms' ";>add to bag</button>
+  <button id="click"; onclick="
+  worth=worth-1;document.querySelector('#cart').
+  innerText='your bag has ' + worth + 'itemms' "
+  > move to wishlist</button>
+  <button id="click-me"; onclick="
+  worth=worth+2;
+  document.querySelector('#cart').innerText='your bag has ' + worth + 'itemms'
+  ">add to 1+1 sale itom</button>
+
+
+
+
+
+   <h1 id="cart"></h1> 
+   <script>
+    let worth=0;
+    document.querySelector('#cart').innerText='your bag has ' + worth + 'itemms'
+   </script>
+</body>
+</html>
